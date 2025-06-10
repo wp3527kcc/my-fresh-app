@@ -16,6 +16,6 @@ const JOKES = [
 
 export const handler = (_req: Request, _ctx: FreshContext): Response => {
   const randomIndex = Math.floor(Math.random() * JOKES.length);
-  const body = JOKES[randomIndex];
+  const body = "joke" + JOKES[randomIndex];
   return new Response(body);
 };
